@@ -42,6 +42,7 @@ document.getElementById("itemForm").addEventListener("submit", async (e) => {
     body: JSON.stringify({ name, description })
   });
   e.target.reset();
+  
   loadItems(document.getElementById("search").value);
 });
 
